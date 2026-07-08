@@ -1,4 +1,4 @@
-<img width="960" height="540" alt="Screenshot 2026-06-29 065215" src="https://github.com/user-attachments/assets/61e12f4b-9039-4d74-82f5-1e986f2a18aa" /><div align="center">
+<img width="960" height="540" alt="Screenshot 2026-07-07 123641" src="https://github.com/user-attachments/assets/a36fdcb1-112d-4909-9dca-429e69717d70" />
 
 # 🏙️ SmartCity — AI-Powered Urban Issue Detection & Reporting System
 
