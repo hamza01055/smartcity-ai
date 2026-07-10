@@ -1,7 +1,8 @@
-<img width="960" height="540" alt="Screenshot 2026-07-07 123641" src="https://github.com/user-attachments/assets/a36fdcb1-112d-4909-9dca-429e69717d70" />
+<div align="center">
 
-# 🏙️ SmartCity — AI-Powered Urban Issue Detection & Reporting System
+<img width="960" height="540" alt="SmartCity hero" src="https://github.com/user-attachments/assets/a36fdcb1-112d-4909-9dca-429e69717d70" />
 
+# SmartCity — AI-Powered Urban Issue Detection & Reporting System
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
@@ -12,92 +13,96 @@
 
 **Final Year Project · BSCS · Hamza Shahzad**
 
-*An end-to-end platform where citizens report urban issues via photo & GPS, and a YOLOv8 AI model automatically classifies them for city administrators.*
+*An end-to-end platform where citizens report urban issues via photo and GPS, and a YOLOv8 model automatically classifies them for city administrators.*
 
-[Features](#-features) · [Screenshots](#-screenshots) · [Architecture](#-architecture) · [Tech Stack](#-tech-stack) · [ML Model](#-machine-learning-model) · [Getting Started](#-getting-started) · [Demo](#-demo-accounts)
+[Overview](#overview) · [Demo](#demo) · [Screenshots](#screenshots) · [Features](#features) · [Architecture](#architecture) · [Tech Stack](#tech-stack) · [ML Model](#machine-learning-model) · [Getting Started](#getting-started) · [Demo Accounts](#demo-accounts)
 
 </div>
 
 ---
 
-## 📋 Overview
+## Overview
 
-SmartCity eliminates the slow, manual complaint process in municipal systems. A citizen snaps a photo of a pothole, broken traffic light, or overflowing garbage bin — the system automatically detects and categorizes the issue using computer vision, then routes it to the appropriate city department within seconds.
+SmartCity replaces the slow, manual complaint workflow found in most municipal systems. A citizen photographs a pothole, a broken traffic light, or an overflowing garbage bin — the system detects and categorizes the issue with computer vision and routes it to the appropriate city department within seconds.
 
 ### The Problem
-Traditional municipal complaint systems are slow: a citizen files a complaint → someone reads it → someone categorizes it → someone routes it. This project **automates the detection and categorization step**, so a report is classified the moment it is submitted.
+
+Traditional municipal complaint systems are slow: a citizen files a complaint, someone reads it, someone categorizes it, and someone routes it. Each hand-off adds delay and opportunity for error.
 
 ### The Solution
-- 📸 Citizen uploads a photo + GPS location
-- 🤖 YOLOv8 AI instantly classifies the issue
-- 🗺️ Admin sees it on a live map dashboard
-- 👷 Field worker gets assigned and resolves it
+
+SmartCity automates the detection and categorization step, so every report is classified the moment it is submitted:
+
+1. **Report** — a citizen uploads a photo with GPS location
+2. **Classify** — YOLOv8 instantly identifies and categorizes the issue
+3. **Dispatch** — an administrator sees it on a live map dashboard and assigns a worker
+4. **Resolve** — the field worker completes the task and updates the status in real time
 
 ---
-## 🎥 Demo
+
+## Demo
 
 ![Demo](assets/demo.gif)
 
-📹 Full Video: https://www.youtube.com/watch?v=qiU9LLmWEfM
-## 📸 Screenshots
-
-<img width="960" height="540" alt="Screenshot 2026-06-29 064919" src="https://github.com/user-attachments/assets/ec34dc15-780a-4c1d-aa28-ce552afd7272" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065457" src="https://github.com/user-attachments/assets/2e870599-bf8a-4c39-83a5-acf3372ecd1d" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065433" src="https://github.com/user-attachments/assets/4d03fa3a-cef7-4055-8054-40751e3bcbb4" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065400" src="https://github.com/user-attachments/assets/c6bfd78c-a88c-4ee4-81cb-8fb0ad32a9ae" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065255" src="https://github.com/user-attachments/assets/ca805feb-390f-4609-870f-078f8c1c3432" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065215" src="https://github.com/user-attachments/assets/c6c56857-f9c3-4f73-b468-164277a5e6ea" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065155" src="https://github.com/user-attachments/assets/b96486f1-75ac-4011-9a06-2b3d16567192" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065343" src="https://github.com/user-attachments/assets/38412b03-8e7d-4f54-9646-fcb8bc0cd7a1" />
-<img width="960" height="540" alt="Screenshot 2026-06-29 065309" src="https://github.com/user-attachments/assets/b27f8821-bd8a-4d64-b264-5021968a7b2c" />
-
-
-### 🏠 Citizen Report Page
-> Citizens upload a photo and share GPS location. YOLOv8 AI automatically detects and classifies the urban issue.
+**Full video walkthrough:** [Watch on YouTube](https://www.youtube.com/watch?v=qiU9LLmWEfM)
 
 ---
 
-### 🔍 Track Report — Search
-![Track Page](screenshots/screenshot2_track.png)
-> Citizens can track their submitted report using a unique tracking ID.
+## Screenshots
+
+### Citizen Report Page
+> Citizens upload a photo and share their GPS location. YOLOv8 automatically detects and classifies the urban issue — no written description required.
+
+<img width="960" height="540" alt="Citizen report page" src="https://github.com/user-attachments/assets/ec34dc15-780a-4c1d-aa28-ce552afd7272" />
+
+### Track Report — Search
+> Citizens track their submitted report using a unique tracking ID.
+
+<img width="960" height="540" alt="Track report search" src="https://github.com/user-attachments/assets/2e870599-bf8a-4c39-83a5-acf3372ecd1d" />
+
+### Track Report — Status View
+> A real-time 5-step progress tracker showing AI confidence score, category, location, and assigned worker.
+
+<img width="960" height="540" alt="Report status view" src="https://github.com/user-attachments/assets/4d03fa3a-cef7-4055-8054-40751e3bcbb4" />
+
+### Field Worker Portal
+> Field workers see only their assigned tasks and can advance each task's status through to resolution.
+
+<img width="960" height="540" alt="Field worker portal" src="https://github.com/user-attachments/assets/c6bfd78c-a88c-4ee4-81cb-8fb0ad32a9ae" />
+
+### Admin Dashboard
+> Live map with color-coded report markers, KPI cards, and a report management table with CSV export.
+
+<img width="960" height="540" alt="Admin dashboard" src="https://github.com/user-attachments/assets/ca805feb-390f-4609-870f-078f8c1c3432" />
+
+### Analytics Page
+> Trend charts, category breakdown, AI confidence scores, an issue heatmap, and a worker leaderboard.
+
+<img width="960" height="540" alt="Analytics page" src="https://github.com/user-attachments/assets/c6c56857-f9c3-4f73-b468-164277a5e6ea" />
+
+<details>
+<summary><b>More screenshots</b></summary>
+<br/>
+
+<img width="960" height="540" alt="Additional screenshot 1" src="https://github.com/user-attachments/assets/b96486f1-75ac-4011-9a06-2b3d16567192" />
+<img width="960" height="540" alt="Additional screenshot 2" src="https://github.com/user-attachments/assets/38412b03-8e7d-4f54-9646-fcb8bc0cd7a1" />
+<img width="960" height="540" alt="Additional screenshot 3" src="https://github.com/user-attachments/assets/b27f8821-bd8a-4d64-b264-5021968a7b2c" />
+
+</details>
 
 ---
 
-### ✅ Track Report — Status View
-![Status View](screenshots/screenshot3_status.png)
-> Real-time 5-step progress tracker showing AI confidence score, category, location, and assigned worker.
+## Features
 
----
-
-### 👷 Field Worker Portal
-![Field Worker Portal](screenshots/screenshot4_worker.png)
-> Field workers select their name to view only their assigned tasks and update status.
-
----
-
-### 🖥️ Admin Dashboard
-![Admin Dashboard](screenshots/screenshot5_admin.png)
-> Live map with color-coded report markers, KPI cards (31 total, 20 reviewed, 7 resolved), and report management table with CSV export.
-
----
-
-### 📊 Analytics Page
-![Analytics Page](screenshots/screenshot6_analytics.png)
-> Comprehensive analytics with trend charts, category breakdown, AI confidence scores, worker performance, issue heatmap, and worker leaderboard.
-
----
-
-## ✨ Features
-
-### 🧑‍💻 Citizen Portal
+### Citizen Portal
 | Feature | Description |
 |---------|-------------|
-| Photo Upload | Drag-drop or camera capture (HEIC/JPG/PNG/WEBP, max 10 MB) |
+| Photo Upload | Drag-and-drop or camera capture (HEIC/JPG/PNG/WEBP, max 10 MB) |
 | GPS Auto-detect | One-click browser geolocation |
 | AI Classification | No description needed — YOLOv8 reads the photo automatically |
 | Status Tracking | Real-time 5-step progress tracker by report ID |
 
-### 🖥️ Admin Dashboard
+### Admin Dashboard
 | Feature | Description |
 |---------|-------------|
 | Live Map | Leaflet map with reports color-coded by category |
@@ -105,33 +110,33 @@ Traditional municipal complaint systems are slow: a citizen files a complaint �
 | Filter & Export | Filter by category/status; one-click CSV export |
 | KPI Cards | Total / Pending / Reviewed / Assigned / Resolved at a glance |
 
-### 📊 Analytics Page
+### Analytics Page
 | Feature | Description |
 |---------|-------------|
 | Trend Chart | Reports per day for the last 7 days |
 | Category Breakdown | Bar chart by issue type with AI confidence scores |
 | Heatmap | Leaflet heatmap of report hot-spots |
-| Worker Leaderboard | Completed vs active tasks per field worker |
-| Avg Resolution Time | Mean hours from submission to resolution |
+| Worker Leaderboard | Completed vs. active tasks per field worker |
+| Avg. Resolution Time | Mean hours from submission to resolution |
 
-### 👷 Field Worker Portal
+### Field Worker Portal
 | Feature | Description |
 |---------|-------------|
 | Personal Task List | Shows only tasks assigned to the logged-in worker |
 | Status Advancement | Advance through Assigned → In Progress → Resolved |
-| Completion Panel | Submit notes + optional completion photo |
+| Completion Panel | Submit notes and an optional completion photo |
 
-### 🔐 Auth System
+### Authentication
 | Feature | Description |
 |---------|-------------|
-| Login Page | Professional layout with demo credential quick-fill |
-| Registration | Full-name, username, password-strength meter, role selection |
-| Offline Fallback | Works without backend using localStorage credential store |
+| Login Page | Professional layout with demo-credential quick-fill |
+| Registration | Full name, username, password-strength meter, role selection |
+| Offline Fallback | Works without the backend using a localStorage credential store |
 | Session Persistence | Auth state survives page refresh |
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
   Citizen / Field Worker
@@ -141,7 +146,7 @@ Traditional municipal complaint systems are slow: a citizen files a complaint �
           ▼
   ┌─────────────────────┐
   │  Backend            │──── PostgreSQL + PostGIS  (reports, geo-queries)
-  │  (Node.js/Express)  │──── Redis / BullMQ        (inference job queue)
+  │  (Node.js/Express)  │──── Redis + BullMQ        (inference job queue)
   └─────────────────────┘
           │  enqueue job
           ▼
@@ -161,28 +166,30 @@ Traditional municipal complaint systems are slow: a citizen files a complaint �
   (Live map · Analytics · Dispatch)
 ```
 
+**Flow:** the backend accepts a report and enqueues an inference job in Redis. The worker consumes the job, calls the ML service's `/predict` endpoint, and writes the classification (category, confidence, bounding box) back to PostgreSQL. The admin dashboard reads the updated report and displays it on the live map.
+
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
 | **Frontend** | React 18, Vite, TypeScript, Tailwind CSS v3 |
-| **UI Style** | Dark cyberpunk / glassmorphism — custom Tailwind color tokens |
+| **UI Style** | Dark cyberpunk / glassmorphism with custom Tailwind color tokens |
 | **Maps** | React-Leaflet, OpenStreetMap tiles, CircleMarker heat overlays |
 | **Forms** | Formik + Yup validation |
 | **Backend** | Node.js 20, Express 4, Multer (file uploads) |
 | **Queue** | Redis + BullMQ (producer in backend, consumer in worker) |
 | **Database** | PostgreSQL 15 + PostGIS extension |
 | **ML Service** | Python 3.11, FastAPI, Ultralytics YOLOv8 |
-| **Model** | YOLOv8m — custom-trained on 3 urban classes |
+| **Model** | YOLOv8m, custom-trained on 3 urban classes |
 | **Deployment** | Docker Compose (6 containers) |
 
 ---
 
-## 🤖 Machine Learning Model
+## Machine Learning Model
 
-The detection model is a **YOLOv8m** network trained on a custom dataset of ~1,500 labeled images across three urban issue classes:
+The detection model is a **YOLOv8m** network trained on a custom dataset of roughly 1,500 labeled images across three urban issue classes:
 
 | Class | Description |
 |-------|-------------|
@@ -190,7 +197,7 @@ The detection model is a **YOLOv8m** network trained on a custom dataset of ~1,5
 | `Traffic_Light` | Traffic signal infrastructure |
 | `Waste_Container` | Garbage bins and waste accumulation |
 
-**Training:** 100 epochs on Google Colab T4 GPU
+**Training:** 100 epochs on a Google Colab T4 GPU.
 
 ### Validation Results
 
@@ -201,19 +208,19 @@ The detection model is a **YOLOv8m** network trained on a custom dataset of ~1,5
 | Precision | **0.82** |
 | Recall | 0.70 |
 
-> To retrain or add new classes, use `notebooks/yolov8_training.ipynb`, then replace `best.pt` in `ml_service/weights/` and restart the ML container.
+> To retrain the model or add new classes, use `notebooks/yolov8_training.ipynb`, replace `best.pt` in `ml_service/weights/`, and restart the ML container.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 smart-city-project/
 ├── frontend/                        React + TypeScript app
 │   └── src/
 │       ├── pages/
-│       │   ├── LoginPage.tsx        Sign-in with demo credential quick-fill
-│       │   ├── RegisterPage.tsx     Account creation with password strength meter
+│       │   ├── LoginPage.tsx        Sign-in with demo-credential quick-fill
+│       │   ├── RegisterPage.tsx     Account creation with password-strength meter
 │       │   ├── ReportPage.tsx       Citizen photo + GPS submission form
 │       │   ├── StatusPage.tsx       5-step progress tracker by report ID
 │       │   ├── DashboardPage.tsx    Admin map, filters, dispatch panel, CSV export
@@ -233,7 +240,6 @@ smart-city-project/
 ├── worker/                          BullMQ consumer → calls ML → updates DB
 ├── notebooks/
 │   └── yolov8_training.ipynb        Colab training notebook
-├── screenshots/                     App screenshots
 ├── prepare_dataset.py               Dataset cleaning + YOLO train/val split
 ├── docker-compose.yml
 └── .env.example                     Environment configuration template
@@ -241,23 +247,24 @@ smart-city-project/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
-- Trained model at `ml_service/weights/best.pt`
 
-### Option 1: Docker (Recommended)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+- Trained model weights at `ml_service/weights/best.pt`
+
+### Option 1 — Docker (Recommended)
 
 ```bash
 # Clone the repository
 git clone https://github.com/hamza01055/SMART-CITY-REPORTING-SYSTEM.git
 cd SMART-CITY-REPORTING-SYSTEM
 
-# Copy environment file
+# Copy the environment template
 cp .env.example .env
 
-# Start all 6 containers
+# Build and start all 6 containers
 docker compose up --build
 ```
 
@@ -269,7 +276,9 @@ docker compose up --build
 | http://localhost:3333 | Backend REST API |
 | http://localhost:8000/docs | ML Service Swagger UI |
 
-### Option 2: Manual (Without Docker)
+### Option 2 — Manual (Without Docker)
+
+Requires local instances of PostgreSQL (with PostGIS) and Redis.
 
 ```bash
 # Terminal 1 — Frontend
@@ -288,7 +297,7 @@ cd worker && npm install && npm run dev
 
 ---
 
-## ⚙️ Environment Configuration
+## Environment Configuration
 
 ```env
 DB_HOST=postgres
@@ -311,7 +320,7 @@ VITE_API_URL=http://localhost:3333
 
 ---
 
-## 👥 Demo Accounts
+## Demo Accounts
 
 | Username | Password | Role |
 |----------|----------|------|
@@ -323,7 +332,7 @@ VITE_API_URL=http://localhost:3333
 
 ---
 
-## 🔮 Future Work
+## Roadmap
 
 - [ ] Real-time dashboard updates via WebSockets
 - [ ] JWT-based stateless authentication
@@ -334,11 +343,11 @@ VITE_API_URL=http://localhost:3333
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 <div align="center">
 
-**Hamza Shahzad**  
+**Hamza Shahzad**
 Final Year Project · BSCS
 
 [![GitHub](https://img.shields.io/badge/GitHub-hamza01055-181717?style=flat-square&logo=github)](https://github.com/hamza01055)
