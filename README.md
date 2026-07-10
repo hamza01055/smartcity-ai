@@ -351,6 +351,6 @@ VITE_API_URL=http://localhost:3333
 Final Year Project · BSCS
 
 [![GitHub](https://img.shields.io/badge/GitHub-hamza01055-181717?style=flat-square&logo=github)](https://github.com/hamza01055)
-[![Email](https://img.shields.io/badge/Email-hamzashahzad454545@gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:hamzashahzad454545@gmail.com)
+[![Email](https://img.shields.io/badge/Email-hamzashahzad78374@gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:hamzashahzad454545@gmail.com)
 
 </div>
