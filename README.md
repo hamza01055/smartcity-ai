@@ -21,6 +21,22 @@
 
 ---
 
+## Quick Start
+
+```bash
+git clone https://github.com/hamza01055/smartcity-ai.git
+cd smartcity-ai
+cp .env.example .env
+docker compose up --build
+```
+
+Then open:
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:3333
+- ML docs: http://localhost:8000/docs
+
+For full setup steps, environment variables, and troubleshooting, see [docs/SETUP.md](docs/SETUP.md).
+
 ## Overview
 
 SmartCity replaces the slow, manual complaint workflow found in most municipal systems. A citizen photographs a pothole, a broken traffic light, or an overflowing garbage bin — the system detects and categorizes the issue with computer vision and routes it to the appropriate city department within seconds.
