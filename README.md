@@ -249,55 +249,28 @@ smart-city-project/
 
 ## Getting Started
 
-### Prerequisites
+For complete setup and deployment instructions, see [docs/SETUP.md](docs/SETUP.md).
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
-- Trained model weights at `ml_service/weights/best.pt`
-
-### Option 1 — Docker (Recommended)
+### Quick start with Docker
 
 ```bash
-# Clone the repository
-git clone https://github.com/hamza01055/SMART-CITY-REPORTING-SYSTEM.git
-cd SMART-CITY-REPORTING-SYSTEM
-
-# Copy the environment template
+git clone https://github.com/hamza01055/smartcity-ai.git
+cd smartcity-ai
 cp .env.example .env
-
-# Build and start all 6 containers
 docker compose up --build
 ```
 
-| URL | Service |
-|-----|---------|
-| http://localhost:5173 | Citizen & Admin App |
-| http://localhost:5173/admin | Admin Dashboard |
-| http://localhost:5173/analytics | Analytics Page |
-| http://localhost:3333 | Backend REST API |
-| http://localhost:8000/docs | ML Service Swagger UI |
+Open the app at:
 
-### Option 2 — Manual (Without Docker)
+- http://localhost:5173 — frontend
+- http://localhost:3333 — backend API
+- http://localhost:8000/docs — ML service docs
 
-Requires local instances of PostgreSQL (with PostGIS) and Redis.
+### Manual setup
 
-```bash
-# Terminal 1 — Frontend
-cd frontend && npm install && npm run dev
+If you prefer to run the services locally, follow the detailed steps in [docs/SETUP.md](docs/SETUP.md).
 
-# Terminal 2 — Backend
-cd backend && npm install && npm run dev
-
-# Terminal 3 — ML Service
-cd ml_service && pip install -r requirements.txt
-uvicorn app.main:app --reload
-
-# Terminal 4 — Worker
-cd worker && npm install && npm run dev
-```
-
----
-
-## Environment Configuration
+### Environment configuration
 
 ```env
 DB_HOST=postgres
@@ -316,7 +289,7 @@ MODEL_PATH=/app/weights/best.pt
 VITE_API_URL=http://localhost:3333
 ```
 
-> ⚠️ **Never commit your `.env` file.** Use `.env.example` as a template.
+> ⚠️ Never commit your `.env` file. Use `.env.example` as a template.
 
 ---
 
