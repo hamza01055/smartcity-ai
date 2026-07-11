@@ -13,7 +13,7 @@
 
 **Final Year Project · BSCS · Hamza Shahzad**
 
-*An end-to-end platform where citizens report urban issues via photo and GPS, and a YOLOv8 model automatically classifies them for city administrators.*
+*SmartCity is an AI-powered urban issue reporting platform that helps citizens submit reports with photos and GPS, while city teams manage, classify, and resolve them through a unified dashboard.*
 
 [Overview](#overview) · [Demo](#demo) · [Screenshots](#screenshots) · [Features](#features) · [Architecture](#architecture) · [Tech Stack](#tech-stack) · [ML Model](#machine-learning-model) · [Getting Started](#getting-started) · [Demo Accounts](#demo-accounts)
 
@@ -30,7 +30,7 @@ cp .env.example .env
 docker compose up --build
 ```
 
-Then open:
+Open the app once the containers are running:
 - Frontend: http://localhost:5173
 - Backend API: http://localhost:3333
 - ML docs: http://localhost:8000/docs
@@ -337,7 +337,7 @@ VITE_API_URL=http://localhost:3333
 <div align="center">
 
 **Hamza Shahzad**
-Final Year Project · BSCS
+Final Year Project · BSAI
 
 [![GitHub](https://img.shields.io/badge/GitHub-hamza01055-181717?style=flat-square&logo=github)](https://github.com/hamza01055)
 [![Email](https://img.shields.io/badge/Email-hamzashahzad78374@gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:hamzashahzad454545@gmail.com)
