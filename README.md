@@ -1,8 +1,7 @@
 <div align="center">
 
 
-
-<img width="960" height="540" alt="SmartCity hero" src="https://github.com/user-attachments/assets/a36fdcb1-112d-4909-9dca-429e69717d70" />
+ alt="SmartCity hero" src="https://github.com/user-attachments/assets/a36fdcb1-112d-4909-9dca-429e69717d70" />
 
 # SmartCity — AI-Powered Urban Issue Detection & Reporting System
 
@@ -71,6 +70,7 @@ SmartCity automates the detection and categorization step, so every report is cl
 ### Citizen Report Page
 > Citizens upload a photo and share their GPS location. YOLOv8 automatically detects and classifies the urban issue — no written description required.
 
+<img width="960" height="540"
 <img width="960" height="540" alt="Citizen report page" src="https://github.com/user-attachments/assets/ec34dc15-780a-4c1d-aa28-ce552afd7272" />
 
 ### Track Report — Search
