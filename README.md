@@ -1,6 +1,7 @@
 <div align="center">
 
 
+
 <img width="960" height="540" alt="SmartCity hero" src="https://github.com/user-attachments/assets/a36fdcb1-112d-4909-9dca-429e69717d70" />
 
 # SmartCity — AI-Powered Urban Issue Detection & Reporting System
