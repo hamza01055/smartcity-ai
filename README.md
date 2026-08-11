@@ -3,6 +3,8 @@
 
 
 
+
+
 # SmartCity — AI-Powered Urban Issue Detection & Reporting System
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
