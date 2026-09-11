@@ -7,11 +7,12 @@
 
 
 
+ 
 
 
 
 
-# SmartCity — AI-Powered Urban Issue Detection & Reporting System
+# SmartCity AI-Powered Urban Issue Detection & Reporting System
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
